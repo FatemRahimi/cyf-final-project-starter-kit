@@ -13,14 +13,25 @@ CREATE TABLE milestones (
   FOREIGN KEY (cohort_id) REFERENCES Cohorts(id)
 );
 
-
-
-CREATE TABLE Trainees (
+CREATE TABLE trainees (
   "id" SERIAL PRIMARY KEY,
   "github_name" VARCHAR(60) NOT NULL UNIQUE,
   "cohort_id" INTEGER NOT NULL,
   FOREIGN KEY (cohort_id) REFERENCES Cohorts(id)
 );
+
+
+CREATE TABLE progresstrainee (
+    id SERIAL PRIMARY KEY,
+    github_name VARCHAR(64),
+    cohort_id INTEGER,
+    milestones TEXT,
+    date DATE,
+    required_pull_requests INTEGER,
+    codewars INTEGER,
+    cohort VARCHAR(50)
+);
+
 
 INSERT INTO cohorts ("name") VALUES ('ZA-2');
 INSERT INTO cohorts ("name") VALUES ('LDN-10');
