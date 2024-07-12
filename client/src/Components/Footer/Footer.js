@@ -13,7 +13,7 @@ const Footer = () => {
         <a href="https://www.facebook.com/codeyourfuture.io">Facebook</a>
       </div>
       <p>&copy; {new Date().getFullYear()} CodeYourFuture</p>
-   
+    </footer>
   );
 };
 
