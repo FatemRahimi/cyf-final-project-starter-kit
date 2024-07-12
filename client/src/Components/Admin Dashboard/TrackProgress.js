@@ -125,7 +125,7 @@ const TrackProgress = () => {
 			</div>
 			{showAdminTable && <AdminTrackerTable />}{" "}
 			{/* Conditionally render AdminTrackerTable */}
-			<Footer />
+		
 		</div>
 	);
 };

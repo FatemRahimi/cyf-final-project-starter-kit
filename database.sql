@@ -21,7 +21,7 @@ CREATE TABLE trainees (
 );
 
 
-CREATE TABLE progresstrainee (
+CREATE TABLE traineeprogress (
     id SERIAL PRIMARY KEY,
     github_name VARCHAR(64),
     cohort_id INTEGER,
